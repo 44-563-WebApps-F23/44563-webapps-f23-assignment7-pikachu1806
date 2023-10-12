@@ -39,9 +39,14 @@
         <div>
             <a id="help-button" class="btn btn-primary text-white">Click for help</a>
         </div>
+        
         <br>
         <div id="help" class="alert bg-primary text-white" style="height: 50px; width: 600px;">
             <p>Help report</p>
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-success" onclick="newGame()"> New Game</button>
         </div>
     </div>
 
@@ -101,6 +106,7 @@
                     height="100px"></div>
         </div>
     </div>
+    
     <div class="container mt-4" style="text-align: center;">
         <div class="row">
             <div class="col-md-2"><img id="img20" src="Images/location.jpeg" onclick="check(20)" alt="Location 21" width="100px"
@@ -180,6 +186,19 @@
             document.getElementById("help").textContent = helpText;
         }
 
+        function newGame() {
+          treasureLocation=Math.floor(Math.random()*24);
+          trapLocation=Math.floor(Math.random()*24);
+          checkCount=0
+          penalty=0
+          lastCheck=0
+          gameOver=false
+          penaltyElement.innerHTML="Penalty is 0";
+          locationElement.innerHTML="Number of locations checked is 0";
+          for (i = 0; i < 24; i++) {
+            document.getElementById(ids[i]).src = "starting_location.jpg";
+          }
+        }
         document.getElementById("help-button").onclick = help;
     </script>
 
