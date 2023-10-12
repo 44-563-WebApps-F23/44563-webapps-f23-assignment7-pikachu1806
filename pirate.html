@@ -193,10 +193,10 @@
           penalty=0
           lastCheck=0
           gameOver=false
-          penaltyElement.innerHTML="Penalty is 0";
-          locationElement.innerHTML="Number of locations checked is 0";
+          document.getElementById("penalty").textContent="Penalty is 0";
+          document.getElementById("locations").textContent="Number of locations checked is 0";
           for (i = 0; i < 24; i++) {
-            document.getElementById(ids[i]).src = "starting_location.jpg";
+            document.getElementById(ids[i]).src = "Images/location.jpeg";
           }
         }
         document.getElementById("help-button").onclick = help;

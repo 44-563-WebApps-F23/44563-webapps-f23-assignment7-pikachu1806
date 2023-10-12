@@ -24,6 +24,7 @@
         <button class="btn btn-success" id="addEnd">Add end</button>
         <button class="btn btn-primary" id="addFront">Add front</button>
         <button class="btn btn-warning" id="remove">Remove</button>
+        <button onclick="swapElements()">swapElements</button>
         <div class="list-group mt-3" id="container">
         <div class="list-group-item merger" style="background-color: rgb(92, 99, 227); text-align: center; color: #fff;">Row Item1</div>
         </div>
@@ -67,6 +68,24 @@
 
             }
         };
+
+        function swapElements(){
+        const elements = document.querySelectorAll('.merger');
+        const index1 = Math.floor(Math.random() * elements.length);
+        let index2 = Math.floor(Math.random() * elements.length);
+
+        while (index2 === index1) {
+            index2 = Math.floor(Math.random() * elements.length);
+        }
+
+        const parent = elements[0].parentNode;
+        const tempNode = document.createElement('div');
+
+        parent.insertBefore(tempNode, elements[index1]);
+        parent.insertBefore(elements[index1], elements[index2 + 1]);
+        parent.insertBefore(elements[index2], tempNode);
+        parent.removeChild(tempNode);
+    }
     </script>
 </body>
 
