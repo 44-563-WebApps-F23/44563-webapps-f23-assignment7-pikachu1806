@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Speed Check WebPage</title>
+</head>
+
+<body>
+
+    <header class="bg-primary text-light text-center">
+        <h1>Madhushree Kurri Speed Check</h1>
+    </header>
+    <div class="container mt-4 text-white" style="text-align: center;">
+        
+            <div id="target" class="alert bg-success" style="text-align: center; margin-left: 200px; margin-right: 200px;">Your time: </div>
+            <div id="counter" class="alert bg-warning" style="text-align: center; margin-left: 200px; margin-right: 200px;">Count: </div>
+            <button id="startTimer" class="alert bg-primary" style="width: 200px;">Start Timer</button><br>
+            <button id="react" class="alert bg-info" style="width: 200px;" onclick="recordTime()">React</button>
+        
+    </div>
+
+    <script>
+        let reactTime = undefined;
+
+        function recordTime() {
+            reactTime = Date.now();
+            console.log(reactTime);
+        }
+
+        document.getElementById("react").onclick = recordTime;
+
+        function startTime() {
+            for (let i = 0; i < 9; i++) {
+                setTimeout(function () {
+                    document.getElementById("counter").innerHTML = i;
+                }, (8 - i) * 1000);
+            }
+
+            setTimeout(function () {
+                if (reactTime === undefined) {
+                    document.getElementById("target").innerHTML = "Too Slow";
+                } else {
+                    const endTime = Date.now();
+                    const elapsedTime = endTime - reactTime;
+                    document.getElementById("target").innerHTML = "Time was " + elapsedTime + "ms";
+                }
+            }, 8000);
+        }
+
+        document.getElementById("startTimer").onclick = startTime;
+    </script>
+</body>
+
+</html>

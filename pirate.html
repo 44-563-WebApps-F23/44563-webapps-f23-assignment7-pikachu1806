@@ -22,115 +22,171 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2 style="font-family: 'Courier New', Courier, monospace;">Find the treasure by Madhushree Kurri</h2>
-                <p>Click on the locations to search for treasure, beware the traps</p>
-                <p id="locations" style="color: red;">Number of locations checked is zero.</p>
-                <p id="penalty" style="color: blue;">Penalty is zero</p>
-                <p class="btn btn-success">Click for help</p>
-                <p id="help">Help report</p>
             </div>
         </div>
     </div>
 
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6" width="100px" height="100px">
-            <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
+        <div class="container my-4">
+        <div class="alert bg-primary text-white" style="height: 50px; width: 600px;">
+            <p>Click on the locations to search for treasure, beware the traps</p>
+        </div>
+        <div id="locations" class="alert bg-warning" style="height: 50px; width: 600px;">
+            <p>Number of locations checked is zero.</p>
+        </div>
+        <div id="penalty" class="alert bg-danger text-white" style="height: 50px; width: 600px;">
+            <p>Penalty is zero.</p>
+        </div>
+        <div>
+            <a id="help-button" class="btn btn-primary text-white">Click for help</a>
+        </div>
+        <br>
+        <div id="help" class="alert bg-primary text-white" style="height: 50px; width: 600px;">
+            <p>Help report</p>
         </div>
     </div>
 
-    <div class="container mt-4">
+    <div class="container mt-4" style="text-align: center;">
         <div class="row">
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6" width="100px" height="100px">
-            <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
+            <div class="col-lg-2"><img id="img0" src="Images/location.jpeg" onclick="check(0)" alt="Location 1" width="100px"
+                    height="100px"></div>
+            <div class="col-lg-2"><img id="img1" src="Images/location.jpeg" onclick="check(1)" alt="Location 2" width="100px"
+                    height="100px"></div>
+            <div class="col-lg-2"><img id="img2" src="Images/location.jpeg" onclick="check(2)" alt="Location 3" width="100px"
+                    height="100px"></div>
+            <div class="col-lg-2"><img id="img3" src="Images/location.jpeg" onclick="check(3)" alt="Location 4" width="100px"
+                    height="100px"></div>
+            <div class="col-lg-2"><img id="img4" src="Images/location.jpeg" onclick="check(4)" alt="Location 5" width="100px"
+                    height="100px"></div>
+        </div>
+    </div>
+    <div class="container mt-4" style="text-align: center;">
+        <div class="row">
+            <div class="col-md-2"><img id="img5" src="Images/location.jpeg" onclick="check(5)" alt="Location 6" width="100px"
+                    height="100px"></div>
+            <div class="col-md-2"><img id="img6" src="Images/location.jpeg" onclick="check(6)" alt="Location 7" width="100px"
+                    height="100px"></div>
+            <div class="col-md-2"><img id="img7" src="Images/location.jpeg" onclick="check(7)" alt="Location 8" width="100px"
+                    height="100px"></div>
+            <div class="col-md-2"><img id="img8" src="Images/location.jpeg" onclick="check(8)" alt="Location 9" width="100px"
+                    height="100px"></div>
+            <div class="col-md-2"><img id="img9" src="Images/location.jpeg" onclick="check(9)" alt="Location 10" width="100px"
+                    height="100px"></div>
+        </div>
+    </div>
+    <div class="container mt-4" style="text-align: center;">
+        <div class="row">
+            <div class="col-md-2"><img id="img10" src="Images/location.jpeg" onclick="check(10)" alt="Location 11" width="100px"
+                    height="100px"></div>
+            <div class="col-md-2"><img id="img11" src="Images/location.jpeg" onclick="check(11)" alt="Location 12" width="100px"
+                    height="100px"></div>
+            <div class="col-md-2"><img id="img12" src="Images/location.jpeg" onclick="check(12)" alt="Location 13" width="100px"
+                    height="100px"></div>
+            <div class="col-md-2"><img id="img13" src="Images/location.jpeg" onclick="check(13)" alt="Location 14" width="100px"
+                    height="100px"></div>
+            <div class="col-md-2"><img id="img14" src="Images/location.jpeg" onclick="check(14)" alt="Location 15" width="100px"
+                    height="100px"></div>
+        </div>
+    </div>
+    <div class="container mt-4" style="text-align: center;">
+        <div class="row">
+            <div class="col-md-2"><img id="img15" src="Images/location.jpeg" onclick="check(15)" alt="Location 16" width="100px"
+                    height="100px"></div>
+            <div class="col-md-2"><img id="img16" src="Images/location.jpeg" onclick="check(16)" alt="Location 17" width="100px"
+                    height="100px"></div>
+            <div class="col-md-2"><img id="img17" src="Images/location.jpeg" onclick="check(17)" alt="Location 18" width="100px"
+                    height="100px"></div>
+            <div class="col-md-2"><img id="img18" src="Images/location.jpeg" onclick="check(18)" alt="Location 19" width="100px"
+                    height="100px"></div>
+            <div class="col-md-2"><img id="img19" src="Images/location.jpeg" onclick="check(19)" alt="Location 20" width="100px"
+                    height="100px"></div>
+        </div>
+    </div>
+    <div class="container mt-4" style="text-align: center;">
+        <div class="row">
+            <div class="col-md-2"><img id="img20" src="Images/location.jpeg" onclick="check(20)" alt="Location 21" width="100px"
+                    height="100px"></div>
+            <div class="col-md-2"><img id="img21" src="Images/location.jpeg" onclick="check(21)" alt="Location 22" width="100px"
+                    height="100px"></div>
+            <div class="col-md-2"><img id="img22" src="Images/location.jpeg" onclick="check(22)" alt="Location 23" width="100px"
+                    height="100px"></div>
+            <div class="col-md-2"><img id="img23" src="Images/location.jpeg" onclick="check(23)" alt="Location 24" width="100px"
+                    height="100px"></div>
+            <div class="col-md-2"><img id="img24" src="Images/location.jpeg" onclick="check(24)" alt="Location 25" width="100px"
+                    height="100px"></div>
         </div>
     </div>
 
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6" width="100px" height="100px">
-            <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-        </div>
-    </div>
+    <script>
+        var ids = ["img0", "img1", "img2", "img3", "img4", "img5", "img6", "img7", "img8", "img9", "img10", "img11",
+            "img12", "img13", "img14", "img15", "img16", "img17", "img18", "img19", "img20", "img21", "img22", "img23", "img24"];
+        var checkCount = 0;
+        var penalty = 0;
+        var lastCheck = 0;
+        var treasureLocation = 5;
+        var trapLocation = 18;
+        var gameOver = false;
 
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6" width="100px" height="100px">
-            <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-        </div>
-    </div>
+        function check(position) {
+            if (gameOver) return;
 
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6">
-             <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-            <div class="col-lg-2 col-md-6" width="100px" height="100px">
-            <img src="Images/Location.jpeg" width="100px" height="100px">
-            </div>
-        </div>
-    </div>
-    <p style="margin-bottom: 100px;"></p>
+            var id = ids[position];
+            var image = document.getElementById(id);
+
+            if (position === treasureLocation) {
+                image.src = "Images/treasure.jpg";
+                gameOver = true;
+                penalty -= 3;
+            } else if (position === trapLocation) {
+                image.src = "Images/trap.jpg";
+                gameOver = true;
+                penalty += 4;
+            } else {
+                image.src = "Images/pirate.jpg";
+                penalty +=1;
+                checkCount +=1;
+            }
+            document.getElementById("locations").textContent = "Number of locations checked is : " + checkCount;
+            document.getElementById("penalty").textContent = "Penality is : " + penalty;
+
+            lastCheck = position;
+        }
+
+        function help() {
+            var treasureRow = Math.floor(treasureLocation / 5);
+            var treasureCol = treasureLocation % 5;
+            var lastRow = Math.floor(lastCheck / 5);
+            var lastCol = lastCheck % 5;
+
+            if (
+                Math.abs(lastRow - treasureRow) <= 1 &&
+                Math.abs(lastCol - treasureCol) <= 1 &&
+                (Math.abs(lastRow - treasureRow) !== 0 || Math.abs(lastCol - treasureCol) !== 0)
+            ) {
+                var helpText = "Can smell it";
+            }
+            else if (
+                Math.abs(lastRow - treasureRow) + Math.abs(lastCol - treasureCol) === 2
+            ) {
+                var helpText = "Close Matie";
+            }
+            else {
+                var helpText = "Step Faster";
+            }
+
+            penalty += 2;
+
+            document.getElementById("penalty").textContent = "Penality is : " + penalty;
+
+            document.getElementById("help").textContent = helpText;
+        }
+
+        document.getElementById("help-button").onclick = help;
+    </script>
+
+</body>
+
+</html>
+
 
   
   
